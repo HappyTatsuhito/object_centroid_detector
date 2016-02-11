@@ -156,7 +156,7 @@ public:
     //transform "/realsense_frame" to "/world" and publish "object/xyz_centroid"-------------------------------------//
     //transform to world from realsense_frame
     geometry_msgs::Point object_point;
-    double THETA = -5*M_PI/36.0;
+    double THETA = -5*M_PI/36;
     double REALSENSE_HEIGHT = 0.98;
     object_point.x = ave_z*cos(THETA)+ave_y*sin(THETA);
     object_point.y = -1*ave_x;
